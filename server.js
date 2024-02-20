@@ -21,8 +21,7 @@ app.use((err, req, res, next) => {
 });
 
 
-const dataFilePath = './data.json';
-
+const dataFilePath = process.env.DATA_FILE_PATH || './data.json';
 let formData = [];
 
 // Carregar dados do arquivo se existir
