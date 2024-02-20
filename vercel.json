@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "server.js", "use": "@now/node" }
-  ],
   "routes": [
-    { "src": "/api/formData", "dest": "server.js" },
-    { "src": "/(.*)", "dest": "server.js" }
+    { "src": "/api/formData", "dest": "index.js" },
+    { "src": "/(.*)", "dest": "index.js" }
   ],
   "env": {
     "NODE_ENV": "production"
