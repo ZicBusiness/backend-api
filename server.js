@@ -18,6 +18,7 @@ try {
 }
 
 app.post('/api/formData', async (req, res) => {
+  console.log('Received POST request:', req.body);
   const newFormData = req.body;
 
   // Adicionar novos dados à lista existente
@@ -35,6 +36,7 @@ app.post('/api/formData', async (req, res) => {
 });
 
 app.get('/api/formData', (req, res) => {
+  console.log('Endpoint accessed successfully.');
   res.json(formData);
 });
 
