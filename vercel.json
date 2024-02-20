@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-      { "src": "server.js", "use": "@now/node" }
+      { "src": "index.js", "use": "@now/node" }
     ],
     "routes": [
       { "src": "/api/formData", "dest": "server.js" },
