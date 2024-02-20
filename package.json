@@ -17,6 +17,6 @@
     "fs": "^0.0.1-security"
   }, 
   "engines": {
-    "node": "14.x"
+    "node": "20.x"
   }
 }
