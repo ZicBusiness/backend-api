@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "vercel-build": "next build"
+    "vercel-build": "npx next build"
     
   },
   "keywords": [],
