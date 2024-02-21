@@ -1,8 +1,8 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/api/formData", "dest": "server.js" },
-    { "src": "/(.*)", "dest": "./data.json" }
+    { "src": "/api/formData", "dest": "./data.json" },
+    { "src": "/(.*)", "dest": "server.js" }
   ],
   "env": {
     "NODE_ENV": "production",
