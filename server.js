@@ -5,11 +5,11 @@ const app = express();
 
 // Configuração do CORS
 const corsOptions = {
-  origin: 'https://vercel-one-zicbusiness.vercel.app/', // Substitua pelo domínio do seu frontend
+  origin: 'https://vercel-one-zicbusiness.vercel.app', // Substitua pelo domínio do seu frontend
   optionsSuccessStatus: 200, // Alguns navegadores podem exigir isso
 };
+app.use(cors(corsOptions));
 
-app.use(cors());
 app.use(express.json());
 app.use((req, res, next) => {
   console.log(`Received request: ${req.method} ${req.url}`);
